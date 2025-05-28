@@ -3,17 +3,15 @@ import avtarimg from "/avtar.jpg";
 
 export default function Header() {
   return (
-    <header className="flex flex-wrap items-center justify-between px-4 py-3 bg-white shadow-sm border-b gap-3 sm:gap-4">
-      <h1 className="text-xl sm:text-2xl font-bold text-blue-700 w-full sm:w-auto">Healthcare.</h1>
+    <header className="flex items-center justify-between px-4 py-3 bg-white shadow-sm border-b gap-2 sm:gap-4 flex-wrap">
+      <h1 className="text-xl sm:text-2xl font-bold text-blue-700">Healthcare.</h1>
 
-      {/* Search bar takes full width on small screens */}
-      <input
-        type="text"
-        placeholder="Search..."
-        className="border rounded-md px-3 py-1 text-sm shadow-sm w-full sm:w-64"
-      />
-
-      <div className="flex items-center gap-3 ml-auto">
+      <div className="flex items-center gap-2 sm:gap-4 ml-auto">
+        <input
+          type="text"
+          placeholder="Search..."
+          className="border rounded-md px-2 py-1 text-sm shadow-sm w-28 sm:w-40"
+        />
         <Bell className="text-gray-600 w-5 h-5" />
         <div className="flex items-center gap-2">
           <img
